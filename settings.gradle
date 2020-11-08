@@ -1,0 +1,2 @@
+rootProject.name='TaikokGestionAbsences'
+include ':app'

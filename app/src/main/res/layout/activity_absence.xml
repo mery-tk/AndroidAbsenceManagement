@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListAbsence"
+    android:background="#C0C0C0"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Liste des absences pour l'étudiant: "
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:fontFamily="@font/bungee_inline" />
+    <ListView
+        android:id="@+id/EtudiantConcerne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </ListView>
+    <Button
+        android:id="@+id/SupprimerAbsence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_states"
+        android:text="Supprimer Absence" />
+    <Button
+        android:id="@+id/AjoutObservation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_states"
+        android:text="Ajouter Observation" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+
+            android:text="ID"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+
+            android:text="Observation"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListAbsPourEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></ListView>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
